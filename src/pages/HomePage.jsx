@@ -4,8 +4,10 @@ import "../styles/HomePage.css";
 const HomePage = () => {
   return (
     <div className="home-page">
-      <h1>Welcome to Study Buddy</h1>
-      <p>Your personal study assistant.</p>
+      <section className = "homepage-text">
+        <h1>Welcome to Study Buddy</h1>
+        <p>Your personal study assistant.</p>
+      </section> 
     </div>
   );
 };

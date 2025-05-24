@@ -1,22 +1,30 @@
-.header {
-  background: linear-gradient(
-    to right,
-    #3A59D1,
-    #3D90D7,
-    #7AC6D2,
-    #B5FCCD
-  );
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+.logo {
+  /* height: 6em; */
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .logo h1 {
   margin: 0;
   font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .nav-menu ul {
@@ -38,26 +46,27 @@
   color: #B5FCCD; 
 } 
 
-
-/* Nav.css */
 .navbar {
-  position: fixed; 
+  position: relative; 
   top: 0;
   left: 0;
-  width: 100%;
-  background: linear-gradient(to right, #3A59D1, #3D90D7, #7AC6D2, #B5FCCD);
-  padding: 15px 20px;
+  width: 100vw;
+  height: 100px;
+  background: linear-gradient(to right,  #3D90D7, #7AC6D2);
+  /* padding: 15px 20px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensures it's above other content */
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+.nav-menu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  margin: 0 30px;
 }
 
 .nav-links {
@@ -82,6 +91,7 @@
   color: #B5FCCD;
 }
 
-.app-container {
-  margin-top: 60px; 
-}
+/* .app-container {
+  margin: 0;
+  padding: 20px;
+} */
