@@ -4,19 +4,21 @@ import HomePage from "./pages/HomePage";
 import AuthPage from "./pages/AuthPage";
 import Nav from "./components/Nav";
 import "./styles/App.css";
+// import About from "./pages/About";
+// import Contact from "./pages/Contact";
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <div className="app-container">
-        <Nav />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/auth" element={<AuthPage />} />
-        </Routes>
-      </div>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/signin" element={<AuthPage />} />
+      </Routes>
     </Router>
   );
-}
+};
 
 export default App;
